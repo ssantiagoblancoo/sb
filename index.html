@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SB</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="./img/spinning-moon.gif" type="image/x-icon">
+</head>
+<body>
+    <header>
+        <div class="logo">MyPorfolio</div>
+        <div class="hamburger-menu">&#9776;</div>
+    </header>
+    <div class="main-container">
+        <div id="side-bar">
+            <img src="img/spinning-moon.gif" class="spinning-moon" onclick="scrollToTop()">
+            <ul>
+                <li><a href="#div1">about-me</a></li>
+                <li>
+                    <a href="#div2" onclick="toggleSubsections(event)">[projects]</a>
+                    <ul class="subsections">
+                        <li><a href="#div3">Div 3</a></li>
+                        <li><a href="#div4">Div 4</a></li>
+                        <li><a href="#div5">Div 5</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <div id="main-content">
+            <div class="moon-container">
+                <img src="./img/moon.jpg" class="moon">
+                <div class="overlay-text">SB</div>
+            </div>
+            <div id="div1" class="content-block">$whoami
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque eu tellus eros. Quisque vitae lacinia mi. Integer dictum odio sem, vitae convallis mi tincidunt id. Vestibulum convallis ligula ex, ac commodo ex bibendum quis. Praesent laoreet ultrices orci et bibendum. Nulla consequat molestie leo, imperdiet molestie massa semper eu. Sed tincidunt quam vitae purus feugiat porttitor. Duis eleifend urna id maximus malesuada. Nulla et nisi arcu. Phasellus vitae dapibus nunc. Nunc ut magna non nibh sollicitudin finibus quis vitae arcu. Donec elementum consequat ipsum id maximus. Etiam porttitor eros tellus, id gravida orci vulputate quis.
+                    Duis hendrerit commodo velit eget lacinia. Curabitur feugiat metus in justo semper, ultrices aliquam justo vehicula. In dapibus, augue eget rhoncus euismod, enim nulla fermentum neque, vitae luctus tortor dui at felis. Nullam vitae nibh tellus. Quisque nec pretium massa. Nulla pellentesque, dui eu iaculis porttitor, risus orci pellentesque odio, nec blandit erat ante a nulla. Cras interdum arcu eros, sit amet placerat dui sollicitudin ut. Nullam orci felis, euismod quis maximus in, egestas vitae turpis. Maecenas vel tellus vitae est rhoncus suscipit.
+                </p>
+            </div>
+            <div id="div2" class="content-block">
+                <span class="stretched-text">Projects</span></div>
+            <div id="div3" class="content-block">Div 3</div>
+            <div id="div4" class="content-block">Div 4</div>
+            <div id="div5" class="content-block">Div 5</div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
